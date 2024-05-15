@@ -48,6 +48,13 @@ function App() {
     setCategory(bmiCategory);
   };
 
+  const clearFields = () => {
+    setWeight('');
+    setHeight('');
+    setBMI('');
+    setCategory('');
+  };
+
   return (
     <div className="App">
       <div className="container">
@@ -75,8 +82,11 @@ function App() {
           />
         </div>
         <div className="button-container">
-          <button className="button" onClick={calculateBMI}>
+          <button className="button calculate" onClick={calculateBMI}>
             Calculate BMI
+          </button>
+          <button className="button clear" onClick={clearFields}>
+            Clear
           </button>
         </div>
         {bmi && (
