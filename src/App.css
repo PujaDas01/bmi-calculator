@@ -73,6 +73,7 @@
 .button.clear:hover {
   background-color: #5a6268;
 }
+
 .result {
   margin-top: 20px;
   text-align: center;
@@ -88,7 +89,12 @@
   color: #555;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .container {
+    border-radius: 0;
+    padding: 10px;
+  }
+
   .button.clear {
     margin-top: 20px;
   }
