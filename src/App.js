@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
   const [weight, setWeight] = useState('');
   const [height, setHeight] = useState('');
   const [bmi, setBMI] = useState('');
